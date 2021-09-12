@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- navbar -->
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">PRODUCT</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">INVENTORY</a></li>
+        </ul>
+
+        <div class="dropdown">
+          <button onclick="myFunction()" class="menu">Menu</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">HOME</a>
+            <a href="#">PRODUCT</a>
+            <a href="#">GALLERY</a>
+            <a href="#">BLOG</a>
+            <a href="#">INVENTORY</a>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="main">
+          <div class="card" id="img">
+            <img
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.explicit.bing.net%2Fth%3Fid%3DOIP.y-JtAX9JHtEk-i3iVEcmVAHaHa%26pid%3DApi&f=1"
+              alt="avatar"
+            />
+          </div>
+          <div class="card" id="name">
+            <h2 id="nama">Nama Anda</h2>
+            <p id="role">Front End Designer</p>
+            <div>
+              <button onclick="myForm();tampilkanData()" id="edit">Edit</button>
+              <button id="resume">Resume</button>
+            </div>
+          </div>
+
+          <!-- form hasil -->
+          <div class="card" id="ket">
+            <p><b>Availability</b></p>
+            <p><b>Usia</b></p>
+            <p><b>Lokasi</b></p>
+            <p><b>Pengalaman</b></p>
+            <p><b>Email</b></p>
+          </div>
+          <div class="card" id="answer">
+            <p id="availability">Full Time</p>
+            <p id="usia">19</p>
+            <p id="lokasi">Jakarta</p>
+            <p id="year">2</p>
+            <p id="email">email@gmail.com</p>
+          </div>
+        </div>
+      </main>
+      <!-- form input -->
+      <div class="form">
+        <form id="form" class="form-content">
+          <br />
+          <label for="Name"> Nama</label><br />
+          <input
+            id="ans-nama"
+            type="text"
+            placeholder="enter your name"
+          /><br /><br />
+          <label for="Role">Role</label><br />
+          <input
+            id="ans-role"
+            type="text"
+            placeholder="enter your role"
+          /><br /><br />
+          <label for="Availability">Availability</label><br />
+          <input
+            id="ans-availability"
+            type="text"
+            placeholder="enter your availability"
+          /><br /><br />
+          <label for="Usia">Usia</label><br />
+          <input
+            id="ans-usia"
+            type="text"
+            placeholder="enter your age"
+          /><br /><br />
+          <label for="Lokasi">Lokasi</label><br />
+          <input
+            id="ans-lokasi"
+            type="text"
+            placeholder="enter your location"
+          /><br /><br />
+          <label for="Years Experience">Years Experience</label><br />
+          <input
+            id="ans-year"
+            type="text"
+            placeholder="enter your years experience"
+          /><br /><br />
+          <label for="Email">Email</label><br />
+          <input
+            id="ans-email"
+            type="text"
+            placeholder="enter your email"
+          /><br /><br /><br />
+
+          <button type="button" id="submit" onclick="changeText()">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
